@@ -1,24 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Registration from './components/Registration/Registration';
+import SignupForm from './components/Login/Login';
 
-function App() {
+function App(event: any) {
+  // const [userReg, setUserReg] = useState({
+  //   username: "",
+  //   email: "",
+  //   phone: "",
+  //   password: "",
+  // })
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Registration /> */}
+      <SignupForm/>
     </div>
   );
 }
